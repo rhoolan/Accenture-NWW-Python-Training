@@ -1,0 +1,53 @@
+2026-03-19 06:36:29,307 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,307 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:29,308 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:29,308 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,308 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:29,309 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,309 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-19 06:36:29,310 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:29,310 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,310 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-19 06:36:29,311 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:29,311 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,311 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:29,312 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:29,312 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:29,312 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,524 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,526 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:36,528 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,528 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,529 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,530 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,531 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-19 06:36:36,531 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,532 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,533 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-19 06:36:36,533 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,534 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,534 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:36,536 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:36,537 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:36,537 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,622 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,623 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:38,624 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,624 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,624 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,626 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,626 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-19 06:36:38,626 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,627 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,628 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-19 06:36:38,628 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,629 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,629 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:36:38,630 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:38,631 - variance - INFO - Starting user input collection process
+2026-03-19 06:36:38,631 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 06:36:48,435 - __main__ - INFO - Starting user input collection process
+2026-03-19 06:36:53,212 - __main__ - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:37:06,646 - __main__ - WARNING - Too many scores provided: 4 > 3
+2026-03-19 06:37:12,344 - __main__ - WARNING - Out-of-range scores detected: [1000]
+2026-03-19 06:37:19,736 - __main__ - INFO - Valid scores collected: [100, 95, 29]

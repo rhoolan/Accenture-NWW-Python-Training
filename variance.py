@@ -1,3 +1,30 @@
+import logging
+import os
+from datetime import datetime
+from logging.handlers import RotatingFileHandler
+
+# Create LOGS directory if it doesn't exist
+LOGS_DIR = 'LOGS'
+os.makedirs(LOGS_DIR, exist_ok=True)
+
+# Configure logging with rotating file handler
+log_filename = os.path.join(LOGS_DIR, 'variance_calculator.log')
+rotating_handler = RotatingFileHandler(
+    log_filename,
+    maxBytes=10*1024*1024,  # 10MB
+    backupCount=5  # Keep 5 backup files
+)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        rotating_handler,
+        logging.StreamHandler()  # Also log to console
+    ]
+)
+logger = logging.getLogger(__name__)
+
 MAX_SCORE = 100
 MAX_SCORE_COUNT = 3
 
@@ -49,23 +76,32 @@ def _get_scores_from_user() -> list[int]:
             ValueError: If any of the input is not an int or not between 0 and 100
             ValueError: Only 3 scores are allowed, if more than 3 scores are provided, raise a ValueError
     """
+    logger.info("Starting user input collection process")
+
     while True:
-        raw = input("Enter scores separated by commas (e.g. 90, 85, 88): ")    
+        raw = input("Enter scores separated by commas (e.g. 90, 85, 88): ")
+        logger.debug(f"Raw user input: '{raw}'")
+
         try:
             scores = [int(item.strip()) for item in raw.split(",")]
-        except ValueError:
+            logger.debug(f"Parsed scores: {scores}")
+        except ValueError as e:
+            logger.warning(f"Invalid input parsing: {e}")
             print("Invalid input — please enter integers only, separated by commas.")
             continue
-        
+
         if len(scores) > MAX_SCORE_COUNT:
+            logger.warning(f"Too many scores provided: {len(scores)} > {MAX_SCORE_COUNT}")
             print(f"Only {MAX_SCORE_COUNT} scores are allowed.")
             continue
-        
+
         invalid_scores = [score for score in scores if not (0 <= score <= MAX_SCORE)]
         if invalid_scores:
+            logger.warning(f"Out-of-range scores detected: {invalid_scores}")
             print("Scores must be between 0 and 100 inclusive.")
             continue
-        
+
+        logger.info(f"Valid scores collected: {scores}")
         return scores
 
 
