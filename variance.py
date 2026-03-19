@@ -20,7 +20,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         rotating_handler,
-        logging.StreamHandler()  # Also log to console
+        # Removed StreamHandler to prevent console logging
     ]
 )
 logger = logging.getLogger(__name__)
@@ -43,23 +43,34 @@ def _find_variance(scores: list[int]) -> float:
         TypeError: If the input is not a list 
         TypeError: If the list elements are not ints
     """
+    logger.info(f"Computing variance for {len(scores)} scores")
+    logger.debug(f"Input scores: {scores}")
+
     # Type check input to ensure it is a list
     if not isinstance(scores, list):
+        logger.error(f"Invalid input type: expected list, got {type(scores).__name__}")
         raise TypeError(f"scores must be a list, got {type(scores).__name__}")
+    
     # Check the input is not empty
     if not scores:
+        logger.error("Empty scores list provided")
         raise ValueError("scores must not be empty")
 
     total = 0 
     for score in scores: 
         if type(score) is not int:
+            logger.error(f"Non-integer score detected: {score} (type: {type(score).__name__})")
             raise TypeError("All scores must be integers (bool is not allowed)")
         total += score
 
     n = len(scores)
     mean = total / n
+    logger.debug(f"Calculated mean: {mean}")
+
     variance = sum((score - mean) ** 2 for score in scores) / n
+    logger.debug(f"Calculated variance: {variance}")
     
+    logger.info(f"Variance calculation completed: {variance}")
     return variance
 
 def _get_scores_from_user() -> list[int]:
@@ -129,5 +140,15 @@ def find_variance_from_user_input() -> float:
     return variance
 
 if __name__ == "__main__":
-    result = find_variance_from_user_input()
-    print(f"Score variance: {result:.4f}")
+    logger.info("Variance Calculator application started")
+    try:
+        result = find_variance_from_user_input()
+        print(f"Score variance: {result:.4f}")
+        logger.info("Application completed successfully")
+    except KeyboardInterrupt:
+        logger.info("Application interrupted by user")
+        print("\nApplication interrupted.")
+    except Exception as e:
+        logger.error(f"Application failed with error: {e}")
+        print(f"An error occurred: {e}")
+        raise
