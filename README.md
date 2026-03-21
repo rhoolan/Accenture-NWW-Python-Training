@@ -1,31 +1,49 @@
-# 📊 Variance Calculator
+# 📊 Variance Calculator with AI Explanations
 
-A robust Python application for calculating population variance of test scores with comprehensive input validation and automated testing.
+A modern Python web application for calculating population variance of test scores with comprehensive input validation, automated testing, and AI-powered explanations using OpenAI.
 
 ## ✨ Features
 
 - **🎯 Precise Variance Calculation**: Computes population variance using the formula `σ² = Σ((xᵢ - μ)²) / N`
 - **🛡️ Input Validation**: Ensures scores are integers between 0-100, with configurable limits
-- **🔄 Interactive Input**: User-friendly command-line interface with error handling and retries
+- **🔄 Interactive CLI**: User-friendly command-line interface with error handling and retries
+- **🌐 Modern Web UI**: Responsive HTML/CSS/JavaScript frontend with real-time calculations
+- **🤖 AI-Powered Explanations**: OpenAI GPT integration for contextual variance interpretations
 - **🧪 Comprehensive Testing**: 16 unit tests covering edge cases, error conditions, and integration scenarios
 - **📈 Audit Trail**: Automatic test result logging with timestamped reports
 - **📝 Production Logging**: Structured logging with file rotation for observability and debugging
-- **🏗️ Modular Architecture**: Clean separation of concerns with reusable functions
+- **🏗️ Modular Architecture**: Clean separation of concerns with reusable functions and REST API
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
-- No external dependencies required
+- OpenAI API key (for AI explanations)
 
 ### Installation
 ```bash
 git clone https://github.com/rhoolan/nww_playbox.git
 cd nww_playbox
+python -m pip install -r requirements.txt
+```
+
+### Configuration
+Create a `.env` file in the project root:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### Usage
-Run the interactive calculator:
+
+#### Web Application (Recommended)
+Start the Flask server:
+```bash
+python app.py
+```
+Open `http://localhost:8000` in your browser for the interactive web interface.
+
+#### Command Line Interface
+Run the traditional CLI calculator:
 ```bash
 python variance.py
 ```
@@ -36,18 +54,11 @@ Enter scores separated by commas (e.g. 90, 85, 88): 85,87,88
 Score variance: 2.0000
 ```
 
-### Web UI (New)
-A modern responsive HTML/CSS frontend is now available and backed by a Flask API.
-
-1. Install dependencies:
-```bash
-python -m pip install -r requirements.txt
-```
-2. Start the server:
-```bash
-python app.py
-```
-3. Open in browser:
+#### API Endpoints
+- `POST /api/variance` with JSON body `{ "scores": [85, 87, 88] }`
+  - Returns `{ "variance": number, "input": [...] }`
+- `POST /api/variance-explanation` with JSON body `{ "variance": 2.0, "scores": [85, 87, 88] }`
+  - Returns `{ "explanation": "AI-generated explanation..." }`
 `http://localhost:8000`
 
 API endpoint:
@@ -71,6 +82,20 @@ Handles user input with validation and error recovery.
 
 #### `find_variance_from_user_input() -> float`
 Orchestrates the complete user interaction flow.
+
+### Flask API Endpoints
+
+#### `POST /api/variance`
+Computes variance for provided scores.
+- **Input**: `{"scores": [int, int, ...]}` (max 10 scores, 0-100 range)
+- **Output**: `{"variance": float, "input": [int, ...]}`
+- **Errors**: 400 for invalid input, 500 for server errors
+
+#### `POST /api/variance-explanation`
+Generates AI explanation of variance using OpenAI GPT.
+- **Input**: `{"variance": float, "scores": [int, int, ...]}`
+- **Output**: `{"explanation": string}`
+- **Requirements**: OpenAI API key configured in `.env`
 
 ### Configuration Constants
 - `MAX_SCORE = 100`: Maximum allowed score
@@ -101,6 +126,26 @@ Generates timestamped reports in `test_results/` directory.
 - ✅ Error handling (empty lists, wrong types, invalid ranges)
 - ✅ User input validation and retry logic
 - ✅ Integration testing
+
+## 🤖 AI Features
+
+### OpenAI Integration
+The application integrates with OpenAI's GPT models to provide contextual explanations of variance calculations.
+
+### Configuration
+- Set `OPENAI_API_KEY` in your `.env` file
+- Uses `gpt-3.5-turbo` model for explanations
+- Configurable temperature and max tokens for response control
+
+### Explanation Features
+- Generates 2-3 sentence explanations of variance meaning
+- References actual input scores in explanations
+- Indicates whether variance represents high or low spread
+- Explains practical implications for data consistency
+
+### Example AI Explanation
+*For scores [85, 87, 88] with variance 2.0000:*
+"The scores 85, 87, and 88 show low variance of 2.0000, indicating that the values are closely clustered around their mean of 86.67. This suggests consistent performance with minimal spread between the individual scores."
 
 ## 📝 Logging
 
@@ -166,25 +211,33 @@ grep "ERROR" logs/variance_calculator.log
 
 ```
 nww_playbox/
-├── variance.py              # Main application
-├── test_variance.py         # Unit test suite
-├── update_test_readme.py    # Test automation script
-├── logs/                    # Application log files
+├── app.py                    # Flask web application with AI explanations
+├── variance.py               # Core variance calculation logic
+├── test_variance.py          # Unit test suite
+├── update_test_readme.py     # Test automation script
+├── requirements.txt          # Python dependencies
+├── .env                      # Environment variables (API keys)
+├── logs/                     # Application log files
 │   └── variance_calculator.log  # Main log file (rotating)
-├── test_results/            # Audit trail directory
-│   └── test_results_*.md    # Timestamped test reports
-├── README.md               # This file
-└── __pycache__/           # Python bytecode
+├── static/                   # Web UI assets
+│   ├── index.html            # Main web interface
+│   └── styles.css            # Responsive styling
+├── test_results/             # Audit trail directory
+│   └── test_results_*.md     # Timestamped test reports
+├── README.md                 # This file
+└── __pycache__/             # Python bytecode
 ```
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Run tests (`python update_test_readme.py`)
-4. Commit changes (`git commit -m 'Add amazing feature'`)
-5. Push to branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
+3. Install dependencies (`pip install -r requirements.txt`)
+4. Set up environment variables (copy `.env.example` if available)
+5. Run tests (`python update_test_readme.py`)
+6. Commit changes (`git commit -m 'Add amazing feature'`)
+7. Push to branch (`git push origin feature/amazing-feature`)
+8. Open a Pull Request
 
 ## 📝 License
 

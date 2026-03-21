@@ -543,3 +543,460 @@
 2026-03-21 00:01:54,761 - variance - INFO - Computing variance for 5 scores: [85, 83, 29, 19, 29]
 2026-03-21 00:01:54,762 - variance - INFO - Variance calculation completed: 830.4
 2026-03-21 00:01:54,762 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:01:54] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:16:45,498 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:16:45,498 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:16:45,499 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:16:46,193 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:16:46,193 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:16:50,292 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:16:50] "GET / HTTP/1.1" 200 -
+2026-03-21 00:16:50,806 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:16:50] "GET /styles.css HTTP/1.1" 200 -
+2026-03-21 00:16:54,969 - variance - INFO - Computing variance for 3 scores: [1, 1, 2]
+2026-03-21 00:16:54,969 - variance - INFO - Variance calculation completed: 0.2222222222222222
+2026-03-21 00:16:54,969 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:16:54] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:16:57,026 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:16:57,027 - openai._base_client - INFO - Retrying request to /chat/completions in 0.450163 seconds
+2026-03-21 00:16:57,650 - variance - INFO - Computing variance for 3 scores: [1, 1, 2]
+2026-03-21 00:16:57,650 - variance - INFO - Variance calculation completed: 0.2222222222222222
+2026-03-21 00:16:57,651 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:16:57] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:16:58,943 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:16:58,944 - openai._base_client - INFO - Retrying request to /chat/completions in 0.465841 seconds
+2026-03-21 00:16:59,609 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:16:59,609 - openai._base_client - INFO - Retrying request to /chat/completions in 0.917684 seconds
+2026-03-21 00:17:00,085 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:17:00,085 - openai._base_client - INFO - Retrying request to /chat/completions in 0.813268 seconds
+2026-03-21 00:17:00,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:17:00,783 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:17:00] "[35m[1mPOST /api/variance-explanation HTTP/1.1[0m" 500 -
+2026-03-21 00:17:01,158 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:17:01,159 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:17:01] "[35m[1mPOST /api/variance-explanation HTTP/1.1[0m" 500 -
+2026-03-21 00:18:06,423 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/app.py', reloading
+2026-03-21 00:18:06,545 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:18:07,186 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:18:07,186 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:18:09,510 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/app.py', reloading
+2026-03-21 00:18:09,598 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:18:10,287 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:18:10,287 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:18:37,074 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:18:37,075 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:18:37,075 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:18:37,867 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:18:37,867 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:18:41,572 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:41] "GET / HTTP/1.1" 200 -
+2026-03-21 00:18:42,161 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:42] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-21 00:18:49,746 - variance - INFO - Computing variance for 4 scores: [95, 92, 19, 86]
+2026-03-21 00:18:49,747 - variance - INFO - Variance calculation completed: 982.5
+2026-03-21 00:18:49,747 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:49] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:18:50,101 - __main__ - INFO - Received explanation request: {'variance': 982.5, 'scores': [95, 92, 19, 86]}
+2026-03-21 00:18:50,101 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:18:50,146 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value of 982.5000 calculated from scores [95, 92, 19, 86], 
+provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
+practical terms. Explain whether this indicates high or low spread in the data and what that suggests.
+2026-03-21 00:18:51,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:51,032 - openai._base_client - INFO - Retrying request to /chat/completions in 0.406837 seconds
+2026-03-21 00:18:51,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:51,692 - openai._base_client - INFO - Retrying request to /chat/completions in 0.950540 seconds
+2026-03-21 00:18:51,722 - variance - INFO - Computing variance for 4 scores: [95, 92, 19, 86]
+2026-03-21 00:18:51,722 - variance - INFO - Variance calculation completed: 982.5
+2026-03-21 00:18:51,723 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:51] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:18:51,911 - __main__ - INFO - Received explanation request: {'variance': 982.5, 'scores': [95, 92, 19, 86]}
+2026-03-21 00:18:51,911 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:18:51,933 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value of 982.5000 calculated from scores [95, 92, 19, 86], 
+provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
+practical terms. Explain whether this indicates high or low spread in the data and what that suggests.
+2026-03-21 00:18:52,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:52,367 - openai._base_client - INFO - Retrying request to /chat/completions in 0.435268 seconds
+2026-03-21 00:18:52,900 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:52,900 - __main__ - ERROR - Failed to generate explanation: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/workspaces/nww_playbox/app.py", line 74, in get_variance_explanation
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-21 00:18:52,902 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:52] "[35m[1mPOST /api/variance-explanation HTTP/1.1[0m" 500 -
+2026-03-21 00:18:53,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:53,131 - openai._base_client - INFO - Retrying request to /chat/completions in 0.904094 seconds
+2026-03-21 00:18:54,720 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:18:54,721 - __main__ - ERROR - Failed to generate explanation: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/workspaces/nww_playbox/app.py", line 74, in get_variance_explanation
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-21 00:18:54,724 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:18:54] "[35m[1mPOST /api/variance-explanation HTTP/1.1[0m" 500 -
+2026-03-21 00:22:13,549 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:22:13,550 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:22:13,550 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:22:14,245 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:22:14,246 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:22:18,082 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:22:18] "GET / HTTP/1.1" 200 -
+2026-03-21 00:22:18,581 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:22:18] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-21 00:22:23,692 - variance - INFO - Computing variance for 4 scores: [1, 1, 1, 1]
+2026-03-21 00:22:23,692 - variance - INFO - Variance calculation completed: 0.0
+2026-03-21 00:22:23,692 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:22:23] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:22:24,187 - __main__ - INFO - Received explanation request: {'variance': 0, 'scores': [1, 1, 1, 1]}
+2026-03-21 00:22:24,187 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:22:24,228 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value of 0.0000 calculated from scores [1, 1, 1, 1], 
+provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
+practical terms. Explain whether this indicates high or low spread in the data and what that suggests.
+2026-03-21 00:22:24,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:22:24,699 - openai._base_client - INFO - Retrying request to /chat/completions in 0.444068 seconds
+2026-03-21 00:22:25,837 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:22:25,838 - openai._base_client - INFO - Retrying request to /chat/completions in 0.896903 seconds
+2026-03-21 00:22:27,397 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-21 00:22:27,398 - __main__ - ERROR - Failed to generate explanation: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/workspaces/nww_playbox/app.py", line 74, in get_variance_explanation
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-21 00:22:27,401 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:22:27] "[35m[1mPOST /api/variance-explanation HTTP/1.1[0m" 500 -
+2026-03-21 00:29:02,551 - variance - INFO - Computing variance for 4 scores: [1, 1, 1, 1]
+2026-03-21 00:29:02,551 - variance - INFO - Variance calculation completed: 0.0
+2026-03-21 00:29:02,552 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:29:02] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:29:03,099 - __main__ - INFO - Received explanation request: {'variance': 0, 'scores': [1, 1, 1, 1]}
+2026-03-21 00:29:03,099 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:29:03,120 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value of 0.0000 calculated from scores [1, 1, 1, 1], 
+provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
+practical terms. Explain whether this indicates high or low spread in the data and what that suggests.
+2026-03-21 00:29:05,019 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:29:05,026 - __main__ - INFO - Received explanation: A variance value of 0.0000 indicates that there is no spread or variability in the data set [1, 1, 1, 1]. All the values in the data set are the same, resulting in a variance of zero. In practical terms, this means that all the observations are identical, showing no deviation from the mean. This suggests that the data points are highly consistent and tightly clustered around the mean value.
+2026-03-21 00:29:05,026 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:29:05] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:29:41,260 - variance - INFO - Computing variance for 6 scores: [99, 85, 79, 87, 90, 12]
+2026-03-21 00:29:41,260 - variance - INFO - Variance calculation completed: 838.2222222222222
+2026-03-21 00:29:41,261 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:29:41] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:29:41,722 - __main__ - INFO - Received explanation request: {'variance': 838.2222222222222, 'scores': [99, 85, 79, 87, 90, 12]}
+2026-03-21 00:29:41,722 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:29:41,743 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value of 838.2222 calculated from scores [99, 85, 79, 87, 90, 12], 
+provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
+practical terms. Explain whether this indicates high or low spread in the data and what that suggests.
+2026-03-21 00:29:43,492 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:29:43,496 - __main__ - INFO - Received explanation: A variance of 838.2222 indicates a relatively high spread in the data. This means that the scores in the dataset deviate quite significantly from the mean, with some scores being much higher or lower than the average. In practical terms, this suggests that there is a wide range of variation in the scores, with some values having a substantial impact on the overall variability of the data set.
+2026-03-21 00:29:43,496 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:29:43] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:32:44,781 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/app.py', reloading
+2026-03-21 00:32:44,897 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:32:45,661 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:32:45,662 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:32:58,101 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:32:58,101 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:32:58,102 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:32:58,881 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:32:58,881 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:33:02,212 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:33:02] "GET / HTTP/1.1" 200 -
+2026-03-21 00:33:02,650 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:33:02] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-21 00:33:56,586 - variance - INFO - Computing variance for 4 scores: [100, 95, 23, 49]
+2026-03-21 00:33:56,586 - variance - INFO - Variance calculation completed: 1033.1875
+2026-03-21 00:33:56,587 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:33:56] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:33:56,924 - __main__ - INFO - Received explanation request: {'variance': 1033.1875, 'scores': [100, 95, 23, 49]}
+2026-03-21 00:33:56,924 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:33:56,965 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 1033.1875 calculated from the scores [100, 95, 23, 49], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([100, 95, 23, 49]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:33:58,985 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:33:59,002 - __main__ - INFO - Received explanation: The variance of 1033.1875, calculated from the scores [100, 95, 23, 49], indicates a relatively high spread in the data. This means that the individual scores deviate quite significantly from the mean of the data set. In practical terms, this suggests that the data points are not very consistent with each other and are spread out over a wide range, reflecting variability in the values provided.
+2026-03-21 00:33:59,002 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:33:59] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:37:38,408 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:37:38,408 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:37:38,409 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:37:39,188 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:37:39,188 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:37:41,648 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:37:41] "GET / HTTP/1.1" 200 -
+2026-03-21 00:37:42,241 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:37:42] "GET /styles.css HTTP/1.1" 200 -
+2026-03-21 00:37:53,089 - variance - INFO - Computing variance for 3 scores: [99, 85, 99]
+2026-03-21 00:37:53,089 - variance - INFO - Variance calculation completed: 43.555555555555564
+2026-03-21 00:37:53,089 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:37:53] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:37:53,715 - __main__ - INFO - Received explanation request: {'variance': 43.555555555555564, 'scores': [99, 85, 99]}
+2026-03-21 00:37:53,715 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:37:53,771 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 43.5556 calculated from the scores [99, 85, 99], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([99, 85, 99]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:37:55,414 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:37:55,423 - __main__ - INFO - Received explanation: The variance value of 43.5556, calculated from the scores [99, 85, 99], indicates a moderate spread in the data. This means that the scores of 99, 85, and 99 are not very consistent with each other. The variance of 43.5556 suggests that there is some variability or dispersion among the scores, with values potentially deviating from the mean by a noticeable amount.
+2026-03-21 00:37:55,424 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:37:55] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:41:52,764 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:41:52,764 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:41:52,765 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:41:53,465 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:41:53,465 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:41:56,315 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:41:56] "GET / HTTP/1.1" 200 -
+2026-03-21 00:41:56,804 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:41:56] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-21 00:42:08,734 - variance - INFO - Computing variance for 3 scores: [99, 98, 90]
+2026-03-21 00:42:08,735 - variance - INFO - Variance calculation completed: 16.22222222222222
+2026-03-21 00:42:08,735 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:42:08] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:42:09,237 - __main__ - INFO - Received explanation request: {'variance': 16.22222222222222, 'scores': [99, 98, 90]}
+2026-03-21 00:42:09,237 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:42:09,279 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 16.2222 calculated from the scores [99, 98, 90], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([99, 98, 90]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:42:10,865 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:42:10,872 - __main__ - INFO - Received explanation: The variance of 16.2222, derived from the scores [99, 98, 90], indicates a moderate spread in the data. This means that the scores vary moderately around the average value. In practical terms, the variance suggests that the scores of 99, 98, and 90 are not tightly clustered around the mean but show some degree of variability.
+2026-03-21 00:42:10,873 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:42:10] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:42:17,159 - variance - INFO - Computing variance for 3 scores: [99, 98, 90]
+2026-03-21 00:42:17,159 - variance - INFO - Variance calculation completed: 16.22222222222222
+2026-03-21 00:42:17,160 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:42:17] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:42:17,532 - __main__ - INFO - Received explanation request: {'variance': 16.22222222222222, 'scores': [99, 98, 90]}
+2026-03-21 00:42:17,533 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:42:17,578 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 16.2222 calculated from the scores [99, 98, 90], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([99, 98, 90]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:42:19,345 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:42:19,346 - __main__ - INFO - Received explanation: The variance of 16.2222 calculated from the scores [99, 98, 90] indicates a moderate spread in the data. This means that the scores are somewhat varied around their mean. In practical terms, this suggests that there is some inconsistency in the performance or values represented by the scores [99, 98, 90], as they deviate moderately from each other and the average.
+2026-03-21 00:42:19,346 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:42:19] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:43:25,036 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:43:25] "GET / HTTP/1.1" 200 -
+2026-03-21 00:43:25,287 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:43:25] "GET /styles.css HTTP/1.1" 200 -
+2026-03-21 00:43:31,194 - variance - INFO - Computing variance for 3 scores: [100, 99, 93]
+2026-03-21 00:43:31,195 - variance - INFO - Variance calculation completed: 9.555555555555555
+2026-03-21 00:43:31,195 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:43:31] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:43:31,826 - __main__ - INFO - Received explanation request: {'variance': 9.555555555555555, 'scores': [100, 99, 93]}
+2026-03-21 00:43:31,826 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:43:31,847 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 9.5556 calculated from the scores [100, 99, 93], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([100, 99, 93]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:43:33,491 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:43:33,492 - __main__ - INFO - Received explanation: The variance of 9.5556, calculated from the scores [100, 99, 93], indicates a moderate spread in the data. This means that the scores deviate moderately from the average, with some variability present. While not extremely dispersed, the data points show some inconsistency in their distances from the mean, suggesting a moderate level of variability within the dataset.
+2026-03-21 00:43:33,493 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:43:33] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:44:29,745 - variance - INFO - Computing variance for 3 scores: [100, 99, 93]
+2026-03-21 00:44:29,745 - variance - INFO - Variance calculation completed: 9.555555555555555
+2026-03-21 00:44:29,745 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:44:29] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:44:30,166 - __main__ - INFO - Received explanation request: {'variance': 9.555555555555555, 'scores': [100, 99, 93]}
+2026-03-21 00:44:30,167 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:44:30,188 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 9.5556 calculated from the scores [100, 99, 93], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([100, 99, 93]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:44:32,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:44:32,366 - __main__ - INFO - Received explanation: The variance of 9.5556, calculated from the scores [100, 99, 93], indicates a relatively low spread in the data. This means that the scores are fairly consistent and close to each other, with little deviation from the mean score. In practical terms, the variance suggests that the scores of 100, 99, and 93 are clustered closely around the average, showing a small amount of variability within the dataset.
+2026-03-21 00:44:32,366 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:44:32] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:45:33,654 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:45:33,654 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:45:33,655 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:45:34,413 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:45:34,413 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:45:37,380 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:45:37] "GET / HTTP/1.1" 200 -
+2026-03-21 00:45:37,821 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:45:37] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-21 00:45:43,482 - variance - INFO - Computing variance for 4 scores: [95, 96, 85, 39]
+2026-03-21 00:45:43,482 - variance - INFO - Variance calculation completed: 545.1875
+2026-03-21 00:45:43,482 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:45:43] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:45:43,798 - __main__ - INFO - Received explanation request: {'variance': 545.1875, 'scores': [95, 96, 85, 39]}
+2026-03-21 00:45:43,798 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:45:43,855 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 545.1875 calculated from the scores [95, 96, 85, 39], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([95, 96, 85, 39]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:45:45,931 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:45:45,940 - __main__ - INFO - Received explanation: The variance of 545.1875, calculated from the scores [95, 96, 85, 39], indicates a relatively high spread in the data. This means that the scores are quite dispersed from the average value. In practical terms, this suggests that there is a significant amount of variability or inconsistency among the scores, with some values deviating notably from the mean.
+2026-03-21 00:45:45,940 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:45:45] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:47:50,321 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:47:50] "GET / HTTP/1.1" 200 -
+2026-03-21 00:47:50,943 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:47:50] "GET /styles.css HTTP/1.1" 200 -
+2026-03-21 00:47:55,903 - variance - INFO - Computing variance for 3 scores: [90, 95, 39]
+2026-03-21 00:47:55,904 - variance - INFO - Variance calculation completed: 640.2222222222223
+2026-03-21 00:47:55,904 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:47:55] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:47:56,362 - __main__ - INFO - Received explanation request: {'variance': 640.2222222222223, 'scores': [90, 95, 39]}
+2026-03-21 00:47:56,362 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:47:56,383 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 640.2222 calculated from the scores [90, 95, 39], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([90, 95, 39]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:47:57,718 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:47:57,720 - __main__ - INFO - Received explanation: The variance of 640.2222 calculated from the scores [90, 95, 39] indicates a relatively high spread in the data. This means that the scores are not very consistent and are more widely dispersed around the mean. In practical terms, this suggests that there is a significant amount of variability or difference between the individual scores of 90, 95, and 39, indicating that the data points are not closely clustered together.
+2026-03-21 00:47:57,721 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:47:57] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:48:28,608 - variance - INFO - Computing variance for 6 scores: [23, 23, 41, 53, 24, 20]
+2026-03-21 00:48:28,609 - variance - INFO - Variance calculation completed: 146.88888888888889
+2026-03-21 00:48:28,609 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:48:28] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:48:28,870 - __main__ - INFO - Received explanation request: {'variance': 146.88888888888889, 'scores': [23, 23, 41, 53, 24, 20]}
+2026-03-21 00:48:28,870 - __main__ - INFO - Using OpenAI API key (first 10 chars): sk-proj-eh...
+2026-03-21 00:48:28,946 - __main__ - INFO - Sending prompt to OpenAI: Given the variance value 146.8889 calculated from the scores [23, 23, 41, 53, 24, 20], 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ([23, 23, 41, 53, 24, 20]) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data
+2026-03-21 00:48:30,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-21 00:48:30,633 - __main__ - INFO - Received explanation: The variance of 146.8889, calculated from the scores [23, 23, 41, 53, 24, 20], indicates a relatively high spread in the data. This means that the individual scores in the dataset vary quite a bit from the mean value, suggesting that the data points are not very consistent with each other. In practical terms, this high variance suggests that the values in the dataset are widely dispersed and do not cluster closely around the average.
+2026-03-21 00:48:30,634 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:48:30] "POST /api/variance-explanation HTTP/1.1" 200 -
+2026-03-21 00:56:59,892 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:56:59] "[33mHEAD /.aws/ HTTP/1.1[0m" 404 -
+2026-03-21 00:56:59,900 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:56:59] "[33mHEAD /.ada/ HTTP/1.1[0m" 404 -
+2026-03-21 00:56:59,909 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:56:59] "[33mHEAD /.ssh/ HTTP/1.1[0m" 404 -
+2026-03-21 00:56:59,995 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:56:59] "[33mHEAD /.midway/ HTTP/1.1[0m" 404 -
+2026-03-21 01:00:27,126 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request syntax ("\x16\x03\x01\x00÷\x01\x00\x00ó\x03\x03\x9f¤*÷\x048ÆðN\x80¦}jÁ\x9c\xad)\x9d\x9e=þ\x84Í\x86xâ´MÏçì\x03\x00\x00\x84\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+2026-03-21 01:00:27,126 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00÷\x01\x00\x00ó\x03\x03\x9f¤*÷\x048ÆðN\x80¦}jÁ\x9c­)\x9d\x9e=þ\x84Í\x86xâ´MÏçì\x03\x00\x00\x84\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À­À£À\x9fÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À[0m" 400 -
+2026-03-21 01:00:27,189 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "HEAD / HTTP/1.1" 200 -
+2026-03-21 01:00:27,189 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,189 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00Ã\x01\x00\x00¿\x03\x01i½í«ä÷\x1d\x05ÇQ¤)Ø\x0fd^C\x84å´©ú\x81«ñbßy\x9f&\x92\x99\x00\x00\x80\x00\x1d\x00\x1cþÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì­\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,190 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,190 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00Ã\x01\x00\x00¿\x03\x02i½í«Z¤K?\x03_Q\x10±\x03\x1bð«V\x08;Ebî¥¨ÖÕ\\aÿ\x91 \x00\x00\x80\x00\x1d\x00\x1cþÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì­\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,190 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00W\x01\x00\x00S\x03\x03i½í«Ú//´*\x95Ò\x99\x00\\ò1\x89')
+2026-03-21 01:00:27,190 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00\x8c\x01\x00\x00\x88\x03\x03i½í«Pá\x0e[Mî·Óû\\\x1bb¦$ô\x07\x84,#Ì\x88W\x15\x81.ÈF\x16\x00\x00\x1a\x13\x05\x13\x04\x13\x01\x13\x02\x13\x03À´Àµ\x00Ç\x00ÆÀ²À°À³À±\x01\x00\x00E\x00')
+2026-03-21 01:00:27,190 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,191 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«[¤"\x8a\x9bñÚprìµø\x1eD\x11\x0f)\x8f\x8b\x9f]Å÷\x8e\x07ó\x06C\x00\x00\x80\x00\x1d\x00\x1cþÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì­\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00\x006\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,191 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00\x8c\x01\x00\x00\x88\x03\x03i½í«Pá\x0e[Mî·Óû\\\x1bb¦$ô\x07\x84,#Ì\x88W\x15\x81.ÈF\x16\x00\x00\x1a\x13\x05\x13\x04\x13\x01\x13\x02\x13\x03À´Àµ\x00Ç\x00ÆÀ²À°À³À±\x01\x00\x00E\x00\x0b\x00\x02\x01\x00\x00+\x00\x03\x02\x03\x04\x00[0m" 400 -
+2026-03-21 01:00:27,191 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00W\x01\x00\x00S\x03\x03i½í«Ú//´*\x95Ò\x99\x00\\ò1\x89 «õ2)y\x9eâ\x16@o\x92ðÌû\x00\x00[0m" 400 -
+2026-03-21 01:00:27,293 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,293 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,293 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00Ã\x01\x00\x00¿\x03\x01i½í«Ä*zp÷Y\x85ö;¥U|I¬åÍ?#ÞÛ×Y\x9d/&pVu\x00\x00\x80À\x9fÀ£\x00\x9fÀDÀRÀEÀS\x00E\x00¾À|\x00\x88\x00ÄÀ}ÌªÌ\x15\x00\x15\x00\x9a\x00\x0b\x00\x0d\x000\x00>\x00¤\x006\x00h\x00¥À>ÀXÀ?ÀY\x00B\x00»À\x82\x00\x85\x00ÁÀ\x83\x00\x0c\x00\x97\x00\x0e\x00\x10\x001\x00?\x00 \x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,293 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00/\x00')
+2026-03-21 01:00:27,293 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«Mt!ó\x19V\x13}Ý¶\x91º \x1f+e7Ê6*\x0e¸Kk\x13Â"­\x00\x00\x80À\x9fÀ£\x00\x9fÀDÀRÀEÀS\x00E\x00¾À|\x00\x88\x00ÄÀ}ÌªÌ\x15\x00\x15\x00\x9a\x00\x0b\x00\x0d\x000\x00>\x00¤\x006\x00h\x00¥À>ÀXÀ?ÀY\x00B\x00»À\x82\x00\x85\x00ÁÀ\x83\x00\x0c\x00\x97\x00\x0e\x00\x10\x001\x00?\x00 \x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00\x006\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,293 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,294 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00[0m" 400 -
+2026-03-21 01:00:27,294 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00Ã\x01\x00\x00¿\x03\x02i½í«Ö\x8f¾MÙ\x1eÌèÌ¦·^K³´c\x17,ò4\x81dÎ\x03IXÈê\x00\x00\x80À\x9fÀ£\x00\x9fÀDÀRÀEÀS\x00E\x00¾À|\x00\x88\x00ÄÀ}ÌªÌ\x15\x00\x15\x00\x9a\x00\x0b\x00\x0d\x000\x00>\x00¤\x006\x00h\x00¥À>ÀXÀ?ÀY\x00B\x00»À\x82\x00\x85\x00ÁÀ\x83\x00\x0c\x00\x97\x00\x0e\x00\x10\x001\x00?\x00 \x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,442 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('À#À¬À®À+À')
+2026-03-21 01:00:27,444 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('À#À¬À®À+À')
+2026-03-21 01:00:27,444 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('À#À¬À®À+À')
+2026-03-21 01:00:27,446 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00Ã\x01\x00\x00¿\x03\x02i½í«Cá\x0dÈþ9q\x13xuÕ\x92\x8b\x08\x10á\x1b!£©\x1a\x89©_èâÃï\x00\x00\x80\x00m\x00§ÀFÀZÀGÀ[\x00F\x00¿À\x84\x00\x89\x00ÅÀ\x85\x00\x1a\x00\x18\x00\x9bÀ²À°À³À±À\x08À\x09À#À¬À®À+À[0m" 400 -
+2026-03-21 01:00:27,444 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00Ã\x01\x00\x00¿\x03\x01i½í«âåy²)'û\x0c±5å±È\x8c{qla\x0dcôAÿ¨õlcL\x00\x00\x80\x00m\x00§ÀFÀZÀGÀ[\x00F\x00¿À\x84\x00\x89\x00ÅÀ\x85\x00\x1a\x00\x18\x00\x9bÀ²À°À³À±À\x08À\x09À#À¬À®À+À[0m" 400 -
+2026-03-21 01:00:27,446 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«+)Fª×GäÖ\x10|<íÖ\x7fPJHÕ\x14Â\x97 *\x147¢¼>\x00\x00\x80\x00m\x00§ÀFÀZÀGÀ[\x00F\x00¿À\x84\x00\x89\x00ÅÀ\x85\x00\x1a\x00\x18\x00\x9bÀ²À°À³À±À\x08À\x09À#À¬À®À+À[0m" 400 -
+2026-03-21 01:00:27,591 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,591 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00Ã\x01\x00\x00¿\x03\x01i½í«#ùÆÈí6\x0eãù©úëcA\x8e\x0et@\x16ï ôáð\x99ÉÍ:\x00\x00\x80À\x14À(À0ÀLÀ`ÀMÀaÀvÀ\x8aÀwÀ\x8bÌ¨Ì\x13À\x10À\x11À\x03\x00JÀ\x04\x00KÀ%À-À\x05\x00LÀ&À.ÀJÀ^ÀKÀ_ÀtÀ\x88ÀuÀ\x89\x00IÀ\x01\x00GÀ\x02\x00H\x00N\x00MÀ\x0dÀ\x0eÀ)À1À\x0fÀ*À2ÀNÀbÀOÀcÀxÀ\x8cÀyÀ\x8dÀ\x0bÀ\x0c\x00[\x00\\\x00WÀ\x17\x00ZÀ\x18À\x19\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,591 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request syntax ("\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«\x05\x8cp\x08r\x81×¯Ò'\xadñ\x10-\x8bë")
+2026-03-21 01:00:27,591 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,592 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«\x05\x8cp\x08r\x81×¯Ò'­ñ\x10-\x8bë[0m" 400 -
+2026-03-21 01:00:27,592 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00Ã\x01\x00\x00¿\x03\x02i½í«wÙä'\x17'3\x95³}¡\x94ë/\x97íh\x93\x0bÇ>¶V+å¡Þv\x00\x00\x80À\x14À(À0ÀLÀ`ÀMÀaÀvÀ\x8aÀwÀ\x8bÌ¨Ì\x13À\x10À\x11À\x03\x00JÀ\x04\x00KÀ%À-À\x05\x00LÀ&À.ÀJÀ^ÀKÀ_ÀtÀ\x88ÀuÀ\x89\x00IÀ\x01\x00GÀ\x02\x00H\x00N\x00MÀ\x0dÀ\x0eÀ)À1À\x0fÀ*À2ÀNÀbÀOÀcÀxÀ\x8cÀyÀ\x8dÀ\x0bÀ\x0c\x00[\x00\\\x00WÀ\x17\x00ZÀ\x18À\x19\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,739 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,739 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request syntax ('\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«\x19')
+2026-03-21 01:00:27,739 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00ã\x01\x00\x00ß\x03\x03i½í«\x19[0m" 400 -
+2026-03-21 01:00:27,739 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00Ã\x01\x00\x00¿\x03\x01i½í«{ñ;ü\x89S\x07\x18\x8f\x9b`É\x0e;±ó&vT3\x19\x88\x9f\x80³b\x1fØ\x00\x00\x80\x00YÀ\x15À\x16\x00X\x00O\x00R\x00Q\x00P\x00S\x00V\x00U\x00T\x00\x81\x00\x83\x00\x80\x00\x82\x00)\x00&\x00*\x00'\x00+\x00(\x00#\x00\x1f\x00"\x00\x1e\x00%\x00!\x00$\x00 \x00\x00ÀªÀ«\x00\x8b\x00\x8c\x00®À¤À¨\x00¨\x00\x8d\x00¯À¥À©\x00©ÀdÀjÀeÀkÀ\x94À\x8eÀ\x95À\x8fÌ«\x00,\x00°\x00±\x00\x8a\x00b\x00a\x00`\x00d\x00\x08\x00\x06\x00\x03\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,739 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+2026-03-21 01:00:27,740 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00Ã\x01\x00\x00¿\x03\x02i½í«ªqØ\x8b·óÅîÖ\x01a6Â1\\\x1eÔJ=Ý@\x9d\x81\x1dÒÁ\x93:\x00\x00\x80\x00YÀ\x15À\x16\x00X\x00O\x00R\x00Q\x00P\x00S\x00V\x00U\x00T\x00\x81\x00\x83\x00\x80\x00\x82\x00)\x00&\x00*\x00'\x00+\x00(\x00#\x00\x1f\x00"\x00\x1e\x00%\x00!\x00$\x00 \x00\x00ÀªÀ«\x00\x8b\x00\x8c\x00®À¤À¨\x00¨\x00\x8d\x00¯À¥À©\x00©ÀdÀjÀeÀkÀ\x94À\x8eÀ\x95À\x8fÌ«\x00,\x00°\x00±\x00\x8a\x00b\x00a\x00`\x00d\x00\x08\x00\x06\x00\x03\x01\x00\x00\x16\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+2026-03-21 01:00:27,887 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('±íÃðÜ\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00\xadÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00')
+2026-03-21 01:00:27,887 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request version ('6\x87q\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00\xadÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00')
+2026-03-21 01:00:27,887 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:27] code 400, message Bad request syntax ('\x16\x03\x02\x00½\x01\x00\x00¹\x03\x02i½í«iT#\x81*Ñ7p´/TÅ¸2E\x8azÝ¶²¾\x07Ä\x96¾\x94%\x14\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00\xadÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00')
+2026-03-21 01:00:27,888 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x02\x00½\x01\x00\x00¹\x03\x02i½í«iT#\x81*Ñ7p´/TÅ¸2E\x8azÝ¶²¾\x07Ä\x96¾\x94%\x14\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00­ÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00[0m" 400 -
+2026-03-21 01:00:27,888 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x03\x00Ý\x01\x00\x00Ù\x03\x03i½í«-\x00¢êð\x0fÖ÷\x95Á\x1d\x17ð²ØÝ h&Ás\\}\x02\x0b6\x87q\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00­ÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00[0m" 400 -
+2026-03-21 01:00:27,887 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:27] "[31m[1m\x16\x03\x01\x00½\x01\x00\x00¹\x03\x01i½í«Këy\x0dój@\x98x\\9[¢¦kS\x9e×\x99a®¢\x09±íÃðÜ\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00­ÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00[0m" 400 -
+2026-03-21 01:00:32,292 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:32] code 400, message Bad request version ('þÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì\xad\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00')
+2026-03-21 01:00:32,292 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:32] "[31m[1m\x16\x03\x00\x00«\x01\x00\x00§\x03\x00i½í«U}¯?O´ò,\x8dwÍ\x09HEø\x0c8Æä«LNæ¢\x04 ³\x08\x00\x00\x80\x00\x1d\x00\x1cþÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì­\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00[0m" 400 -
+2026-03-21 01:00:37,393 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:37] code 400, message Bad request version ('\x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00')
+2026-03-21 01:00:37,393 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:37] "[31m[1m\x16\x03\x00\x00«\x01\x00\x00§\x03\x00i½í°â°Þï.\x8b\x90­»\x91B\x18\x05\x8dnÝòtv>îÂîMãÑmþ\x00\x00\x80À\x9fÀ£\x00\x9fÀDÀRÀEÀS\x00E\x00¾À|\x00\x88\x00ÄÀ}ÌªÌ\x15\x00\x15\x00\x9a\x00\x0b\x00\x0d\x000\x00>\x00¤\x006\x00h\x00¥À>ÀXÀ?ÀY\x00B\x00»À\x82\x00\x85\x00ÁÀ\x83\x00\x0c\x00\x97\x00\x0e\x00\x10\x001\x00?\x00 \x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00[0m" 400 -
+2026-03-21 01:00:37,394 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:37] code 400, message Bad request version ('À#À¬À®À+À')
+2026-03-21 01:00:37,395 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:37] "[31m[1m\x16\x03\x00\x00«\x01\x00\x00§\x03\x00i½íµ(þZ\x9aFà¦V\x89#[Üæ2\x9ch**5âÂØXjãyII\x00\x00\x80\x00m\x00§ÀFÀZÀGÀ[\x00F\x00¿À\x84\x00\x89\x00ÅÀ\x85\x00\x1a\x00\x18\x00\x9bÀ²À°À³À±À\x08À\x09À#À¬À®À+À[0m" 400 -
+2026-03-21 01:00:42,496 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:42] code 400, message Bad request version ('\x00[\x00\\\x00WÀ\x17\x00ZÀ\x18À\x19\x01\x00')
+2026-03-21 01:00:42,496 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:42] "[31m[1m\x16\x03\x00\x00«\x01\x00\x00§\x03\x00i½íµ¨ðM<ü\x08\x8c,V´L>\x09\x84Y\x837\x85y\x95qd)3¬$\x12¢\x00\x00\x80À\x14À(À0ÀLÀ`ÀMÀaÀvÀ\x8aÀwÀ\x8bÌ¨Ì\x13À\x10À\x11À\x03\x00JÀ\x04\x00KÀ%À-À\x05\x00LÀ&À.ÀJÀ^ÀKÀ_ÀtÀ\x88ÀuÀ\x89\x00IÀ\x01\x00GÀ\x02\x00H\x00N\x00MÀ\x0dÀ\x0eÀ)À1À\x0fÀ*À2ÀNÀbÀOÀcÀxÀ\x8cÀyÀ\x8dÀ\x0bÀ\x0c\x00[\x00\\\x00WÀ\x17\x00ZÀ\x18À\x19\x01\x00[0m" 400 -
+2026-03-21 01:00:47,596 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:47] code 400, message Bad request version ('\x00\x00ÀªÀ«\x00\x8b\x00\x8c\x00®À¤À¨\x00¨\x00\x8d\x00¯À¥À©\x00©ÀdÀjÀeÀkÀ\x94À\x8eÀ\x95À\x8fÌ«\x00,\x00°\x00±\x00\x8a\x00b\x00a\x00`\x00d\x00\x08\x00\x06\x00\x03\x01\x00')
+2026-03-21 01:00:47,597 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:47] "[31m[1m\x16\x03\x00\x00«\x01\x00\x00§\x03\x00i½íºÑ}Á\x86Þ¥_Í\x96èPT$ýüÃ:¥à\x94¢\x15ú\\>¶[\x0c\x00\x00\x80\x00YÀ\x15À\x16\x00X\x00O\x00R\x00Q\x00P\x00S\x00V\x00U\x00T\x00\x81\x00\x83\x00\x80\x00\x82\x00)\x00&\x00*\x00'\x00+\x00(\x00#\x00\x1f\x00"\x00\x1e\x00%\x00!\x00$\x00 \x00\x00ÀªÀ«\x00\x8b\x00\x8c\x00®À¤À¨\x00¨\x00\x8d\x00¯À¥À©\x00©ÀdÀjÀeÀkÀ\x94À\x8eÀ\x95À\x8fÌ«\x00,\x00°\x00±\x00\x8a\x00b\x00a\x00`\x00d\x00\x08\x00\x06\x00\x03\x01\x00[0m" 400 -
+2026-03-21 01:00:47,597 - werkzeug - ERROR - 127.0.0.1 - - [21/Mar/2026 01:00:47] code 400, message Bad request version ('\x90KÄÞ\x03\x13Új\x87ß\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00\xadÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00')
+2026-03-21 01:00:47,598 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 01:00:47] "[31m[1m\x16\x03\x00\x00¥\x01\x00\x00¡\x03\x00i½í¿ÞË\x8f\x99ÈN\x1eã\x1c¡#Ó»y§ÿJ \x90KÄÞ\x03\x13Új\x87ß\x00\x00z\x00\x93\x00\x94\x00¶\x00¬\x00\x95\x00·\x00­ÀhÀnÀiÀoÀ\x98À\x92À\x99À\x93Ì®\x00.\x00¸\x00¹\x00\x92\x00|\x00[0m" 400 -
+2026-03-21 01:43:35,120 - variance - INFO - Computing variance for 3 scores: [85, True, 88]
+2026-03-21 01:43:35,121 - variance - ERROR - Non-integer score detected: True (type: bool)
+2026-03-21 01:43:35,121 - variance - INFO - Computing variance for 0 scores: []
+2026-03-21 01:43:35,121 - variance - ERROR - Empty scores list provided
+2026-03-21 01:43:35,122 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,122 - variance - WARNING - Too many scores provided: 11 > 10, input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2026-03-21 01:43:35,123 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-21 01:43:35,123 - variance - INFO - Computing variance for 3 scores: [85, 87, 88]
+2026-03-21 01:43:35,123 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-21 01:43:35,123 - variance - INFO - Computing variance for 3 scores: [85, 87, 88]
+2026-03-21 01:43:35,123 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-21 01:43:35,124 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,124 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-21 01:43:35,124 - variance - INFO - Computing variance for 3 scores: [85, 87, 88]
+2026-03-21 01:43:35,124 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-21 01:43:35,124 - variance - INFO - Computing variance for 3 scores: [90, 90, 90]
+2026-03-21 01:43:35,125 - variance - INFO - Variance calculation completed: 0.0
+2026-03-21 01:43:35,125 - variance - INFO - Computing variance for 3 scores: [-10, 0, 10]
+2026-03-21 01:43:35,125 - variance - ERROR - Score out of range: -10
+2026-03-21 01:43:35,125 - variance - INFO - Computing variance for 3 scores: [85, 87.5, 88]
+2026-03-21 01:43:35,125 - variance - ERROR - Non-integer score detected: 87.5 (type: float)
+2026-03-21 01:43:35,125 - variance - INFO - Computing variance for 5 scores: [85, 87, 88, 89, 90]
+2026-03-21 01:43:35,126 - variance - INFO - Variance calculation completed: 2.96
+2026-03-21 01:43:35,126 - variance - INFO - Computing variance for 10 scores: not a list
+2026-03-21 01:43:35,126 - variance - ERROR - Invalid input type: expected list, got str
+2026-03-21 01:43:35,126 - variance - INFO - Computing variance for 3 scores: [101, 90, 80]
+2026-03-21 01:43:35,126 - variance - ERROR - Score out of range: 101
+2026-03-21 01:43:35,126 - variance - INFO - Computing variance for 1 scores: [85]
+2026-03-21 01:43:35,126 - variance - INFO - Variance calculation completed: 0.0
+2026-03-21 01:43:35,127 - variance - INFO - Computing variance for 11 scores: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2026-03-21 01:43:35,127 - variance - ERROR - Too many scores: 11 > 10
+2026-03-21 01:43:35,127 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,127 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-21 01:43:35,128 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-21 01:43:35,128 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,128 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-21 01:43:35,129 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-21 01:43:35,130 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,130 - variance - WARNING - Too many scores provided: 11 > 10, input: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2026-03-21 01:43:35,130 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-21 01:43:35,130 - variance - INFO - Starting user input collection process
+2026-03-21 01:43:35,131 - variance - INFO - Valid scores collected: [85, 87, 88]

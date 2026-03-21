@@ -1,8 +1,13 @@
 from flask import Flask, jsonify, request, send_from_directory
 import os
+import logging
 from dotenv import load_dotenv
 from openai import OpenAI
 from variance import _find_variance
+
+# Setup logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -41,6 +46,8 @@ def compute_variance():
 @app.route('/api/variance-explanation', methods=['POST'])
 def get_variance_explanation():
     data = request.get_json(silent=True)
+    logger.info(f"Received explanation request: {data}")
+    
     if data is None:
         return jsonify({'error': 'Invalid JSON payload'}), 400
 
@@ -53,14 +60,21 @@ def get_variance_explanation():
     try:
         api_key = os.getenv('OPENAI_API_KEY')
         if not api_key:
+            logger.error('OpenAI API key not configured')
             return jsonify({'error': 'OpenAI API key not configured'}), 500
         
+        logger.info(f'Using OpenAI API key (first 10 chars): {api_key[:10]}...')
         client = OpenAI(api_key=api_key)
         
-        prompt = f"""Given the variance value of {variance:.4f} calculated from scores {scores}, 
-provide a brief, one-paragraph explanation (2-3 sentences max) of what this variance means in 
-practical terms. Explain whether this indicates high or low spread in the data and what that suggests."""
+        prompt = f"""Given the variance value {variance:.4f} calculated from the scores {scores}, 
+write a brief explanation (2–3 sentences, one paragraph max) of what this variance means in practical terms.
+
+Your response must:
+- Explicitly reference and restate the scores ({scores}) in the explanation
+- State whether the variance indicates high or low spread
+- Briefly explain what that implies about the consistency of the data"""
         
+        logger.info(f'Sending prompt to OpenAI: {prompt}')
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
@@ -72,9 +86,11 @@ practical terms. Explain whether this indicates high or low spread in the data a
         )
         
         explanation = response.choices[0].message.content.strip()
+        logger.info(f'Received explanation: {explanation}')
         return jsonify({'explanation': explanation}), 200
         
     except Exception as exc:
+        logger.error(f'Failed to generate explanation: {str(exc)}', exc_info=True)
         return jsonify({'error': 'Failed to generate explanation', 'detail': str(exc)}), 500
 
 

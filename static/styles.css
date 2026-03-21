@@ -70,6 +70,7 @@ button:active {
 
 .result,
 .errors,
+.loading,
 .explanation {
     border-radius: 0.75rem;
     padding: 0.8rem;
@@ -80,6 +81,7 @@ button:active {
 
 .result.visible,
 .errors.visible,
+.loading.visible,
 .explanation.visible {
     display: block;
 }
@@ -94,6 +96,36 @@ button:active {
     background: #fef2f2;
     color: #981b1c;
     border: 1px solid #fecaca;
+}
+
+.loading {
+    background: #fefce8;
+    color: #92400e;
+    border: 1px solid #fde68a;
+    font-weight: 400;
+    font-size: 0.95rem;
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.loading.visible {
+    display: flex;
+    justify-content: center;
+}
+
+.loading .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d97706;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .explanation {
