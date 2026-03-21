@@ -18,6 +18,7 @@
             <button id="calculate">Calculate Variance</button>
 
             <div id="result" class="result" aria-live="polite"></div>
+            <div id="explanation" class="explanation" aria-live="polite"></div>
             <div id="errors" class="errors" aria-live="polite"></div>
         </section>
     </main>
@@ -26,13 +27,16 @@
         const calculateBtn = document.getElementById('calculate');
         const scoresInput = document.getElementById('scores');
         const resultNode = document.getElementById('result');
+        const explanationNode = document.getElementById('explanation');
         const errorsNode = document.getElementById('errors');
 
         function renderError(msg) {
             errorsNode.textContent = msg;
             resultNode.textContent = '';
+            explanationNode.textContent = '';
             errorsNode.classList.add('visible');
             resultNode.classList.remove('visible');
+            explanationNode.classList.remove('visible');
         }
 
         function renderResult(variance) {
@@ -40,6 +44,33 @@
             errorsNode.classList.remove('visible');
             resultNode.textContent = `Variance: ${variance.toFixed(4)}`;
             resultNode.classList.add('visible');
+            explanationNode.classList.remove('visible');
+            explanationNode.textContent = '';
+        }
+
+        function renderExplanation(explanation) {
+            explanationNode.textContent = explanation;
+            explanationNode.classList.add('visible');
+        }
+
+        async function fetchExplanation(variance, scores) {
+            try {
+                const response = await fetch('/api/variance-explanation', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ variance, scores })
+                });
+
+                const json = await response.json();
+                if (!response.ok) {
+                    console.error('Explanation error:', json.error);
+                    return;
+                }
+
+                renderExplanation(json.explanation);
+            } catch (err) {
+                console.error('Failed to fetch explanation:', err.message);
+            }
         }
 
         calculateBtn.addEventListener('click', async () => {
@@ -85,6 +116,9 @@
                 }
 
                 renderResult(json.variance);
+                
+                // Fetch AI explanation asynchronously
+                fetchExplanation(json.variance, scores);
             } catch (err) {
                 renderError('Network error: ' + err.message);
             }

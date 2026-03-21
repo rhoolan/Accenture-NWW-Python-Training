@@ -69,7 +69,8 @@ button:active {
 }
 
 .result,
-.errors {
+.errors,
+.explanation {
     border-radius: 0.75rem;
     padding: 0.8rem;
     min-height: 48px;
@@ -78,7 +79,8 @@ button:active {
 }
 
 .result.visible,
-.errors.visible {
+.errors.visible,
+.explanation.visible {
     display: block;
 }
 
@@ -92,6 +94,16 @@ button:active {
     background: #fef2f2;
     color: #981b1c;
     border: 1px solid #fecaca;
+}
+
+.explanation {
+    background: #eff6ff;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 440px) {
