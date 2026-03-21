@@ -530,3 +530,16 @@
 2026-03-20 10:41:38,138 - variance - INFO - Computing variance for 4 scores: [1, 2, 3, 8]
 2026-03-20 10:41:38,139 - variance - INFO - Variance calculation completed: 7.25
 2026-03-20 10:41:38,139 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:41:38] "POST /api/variance HTTP/1.1" 200 -
+2026-03-21 00:01:34,961 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.13.175:8000
+2026-03-21 00:01:34,961 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-21 00:01:34,962 - werkzeug - INFO -  * Restarting with stat
+2026-03-21 00:01:35,131 - werkzeug - WARNING -  * Debugger is active!
+2026-03-21 00:01:35,138 - werkzeug - INFO -  * Debugger PIN: 188-973-869
+2026-03-21 00:01:41,007 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:01:41] "GET / HTTP/1.1" 200 -
+2026-03-21 00:01:41,436 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:01:41] "GET /styles.css HTTP/1.1" 200 -
+2026-03-21 00:01:54,761 - variance - INFO - Computing variance for 5 scores: [85, 83, 29, 19, 29]
+2026-03-21 00:01:54,762 - variance - INFO - Variance calculation completed: 830.4
+2026-03-21 00:01:54,762 - werkzeug - INFO - 127.0.0.1 - - [21/Mar/2026 00:01:54] "POST /api/variance HTTP/1.1" 200 -
